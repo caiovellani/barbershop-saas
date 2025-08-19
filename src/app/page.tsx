@@ -1,5 +1,11 @@
-const Home = () => {
-  return <h1>Hello World</h1>
-}
+import Header from "@/app/components/header";
 
-export default Home
+const Home = () => {
+  return (
+    <div>
+      <Header />
+    </div>
+  );
+};
+
+export default Home;
