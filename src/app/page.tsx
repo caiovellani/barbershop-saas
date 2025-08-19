@@ -1,9 +1,33 @@
 import Header from "@/app/components/header";
+import { Button } from "@/app/components/ui/button";
+import { Input } from "@/app/components/ui/input";
+import { SearchIcon } from "lucide-react";
+import Image from "next/image";
 
 const Home = () => {
   return (
     <div>
       <Header />
+      <div className="p-5">
+        <h2 className="text-xl font-bold">Olá, Caio!</h2>
+        <p>Segunda-feira, 05 de agosto.</p>
+
+        <div className="mt-6 flex items-center gap-2">
+          <Input placeholder="Faça sua busca..." />
+          <Button>
+            <SearchIcon />
+          </Button>
+        </div>
+
+        <div className="relative mt-6 h-[150px] w-full">
+          <Image
+            src="/banner-01.png"
+            fill
+            className="rounded-xl object-cover"
+            alt="Agende nos melhores com SaaS Barber"
+          />
+        </div>
+      </div>
     </div>
   );
 };
