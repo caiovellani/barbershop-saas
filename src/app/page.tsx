@@ -85,8 +85,7 @@ const Home = async () => {
         <Card className="rounded-none">
           <CardContent className="px-5 py-6">
             <p className="text-sm text-gray-400">
-              © 2023 Copyright
-              <span className="font-bold">SaaS Barber</span>
+              © 2023 Copyright <span className="font-bold">SaaS Barber</span>
             </p>
           </CardContent>
         </Card>
